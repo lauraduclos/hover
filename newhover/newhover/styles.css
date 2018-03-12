@@ -1,0 +1,293 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Start your base/mobile styles here */
+
+html, body {
+  font-size: 16px;
+  background-color: #bbbbbb
+  /* Sets default font-size to 16px, ensuring 1em = 16px; */
+}
+
+p {
+  color: #bf3724;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.main-text, h {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  padding-bottom: 10px;
+  font-size: 250%;
+  color: #c1272d
+}
+
+h2 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 100%;
+}
+
+.caption {
+  color: gray;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+.credit {
+  font-weight: 400;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+  background: #ccc;
+  border: 2px solid #fff;
+  opacity: .6;
+  z-index: 3;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  outline: none;
+}
+
+#condoms {
+  /*background-color: purple;*/
+  position: absolute;
+  top: 15%;
+  /* Must be in percentage or will move on different devices*/
+  left: 55%;
+}
+
+#waste {
+  position: absolute;
+  top: 40%;
+  /* Must be in percentage or will move on different devices*/
+  left: 20%;
+  /* Must be in percentage or will move on different devices*/
+}
+
+#wound {
+  /*background-color: purple;*/
+  position: absolute;
+  top: 60%;
+  /* Must be in percentage or will move on different devices*/
+  left: 45%;
+  /* Must be in percentage or will move on different devices*/
+}
+
+#narcan {
+  /*background-color: purple;*/
+  position: absolute;
+  top: 75%;
+  /* Must be in percentage or will move on different devices*/
+  left: 75%;
+  /* Must be in percentage or will move on different devices*/
+}
+
+#literature {
+  /*background-color: purple;*/
+  position: absolute;
+  top: 40%;
+  /* Must be in percentage or will move on different devices*/
+  left: 65%;
+  /* Must be in percentage or will move on different devices*/
+}
+
+#inhaler {
+  /*background-color: purple;*/
+  position: absolute;
+  top: 23%;
+  /* Must be in percentage or will move on different devices*/
+  left: 26%;
+  /* Must be in percentage or will move on different devices*/
+}
+
+#gloves {
+  /*background-color: purple;*/
+  position: absolute;
+  top: 65%;
+  /* Must be in percentage or will move on different devices*/
+  left: 60%;
+  /* Must be in percentage or will move on different devices*/
+}
+
+#instructions {
+  /*background-color: purple;*/
+  position: absolute;
+  top: 27%;
+  /* Must be in percentage or will move on different devices*/
+  left: 75%;
+  /* Must be in percentage or will move on different devices*/
+}
+
+#alcohol {
+  /*background-color: purple;*/
+  position: absolute;
+  top: 55%;
+  /* Must be in percentage or will move on different devices*/
+  left: 15%;
+  /* Must be in percentage or will move on different devices*/
+}
+
+#bag {
+  /*background-color: purple;*/
+  position: absolute;
+  top: 50%;
+  /* Must be in percentage or will move on different devices*/
+  left: 37%;
+  /* Must be in percentage or will move on different devices*/
+}
+
+#shield {
+  /*background-color: purple;*/
+  position: absolute;
+  top: 20%;
+  /* Must be in percentage or will move on different devices*/
+  left: 44%;
+  /* Must be in percentage or will move on different devices*/
+}
+
+.photo-container {
+  width: 100%;
+  position: relative;
+  height: auto;
+  /*z-index: 1;*/
+}
+
+.info_slides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  opacity: .8;
+  display: none;
+  /*padding-top: 20px;*/
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.info_slides_show {
+  display: block;
+}
+
+.hide_btn {
+  display: none;
+  color: yellow;
+}
+
+.popIn-info {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  padding: 70px 15px 30px 15px;
+  font-size: 1.5em;
+  text-align: center;
+  color: #F0C71D;
+  height: 100%;
+  /*display: none;*/
+}
+
+.btn_close {
+  position: absolute;
+  font-family: sans-serif;
+  top: 5%;
+  left: 92%;
+  font-size: 2em;
+  color: yellow;
+  z-index: 20;
+  font-weight: 900;
+  display: none;
+}
+
+.btn_close_show {
+  display: block;
+}
+
+img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+  /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+@media(min-width: 729px) {
+  /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+  .circle:hover {
+    background: #ed462f;
+  }
+  .popIn-info {
+    font-size: 3em;
+    padding: 200px 15px 30px 15px;
+    /*display: none;*/
+  }
+  .btn_close {
+    font-size: 4em;
+    font-weight: bold;
+  }
+  .btn_close:hover {
+    font-weight: bold;
+    color: yellow;
+  }
+}
